@@ -1,0 +1,102 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+ }
+ 
+ .container {
+     width: 100%;
+     height: 100vh;
+     background: #D3D3D3;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .calc {
+     background-color: rgb(0, 0, 0);
+     padding: 20px;
+     border-radius: 10px;
+ }
+ 
+ .calc form input {
+     border: 0;
+     outline: 0;
+     width: 60px;
+     height: 60px;
+     border-radius: 10px;
+     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+     background: transparent;
+     font-size: 20px;
+     color: rgb(220, 220, 220);
+     cursor: pointer;
+     margin: 10px;
+ }
+ 
+ form .display {
+     display: flex;
+     justify-content: flex-end;
+     margin: 20px 0;
+ }
+ 
+ form input.num-operator {
+     color: rgb(220, 220, 220);
+ }
+ 
+ form input.num-operator:hover {
+     color: rgb(36, 254, 181);
+ }
+ 
+ form input.sym-operator {
+     color: rgb(220, 220, 220);
+ }
+ 
+ form input.sym-operator:hover {
+     color: rgb(238, 255, 5);
+ }
+ 
+ form input.clear-operator {
+     color: rgb(220, 220, 220);
+ }
+ 
+ form input.clear-operator:hover {
+     color: rgb(253, 192, 138);
+ }
+ 
+ form input.equal-operator {
+     color: rgb(220, 220, 220);
+ }
+ 
+ form input.equal-operator:hover {
+     color: rgb(58, 245, 89);
+ }
+ 
+ .display input {
+     text-align: right;
+     flex: 1;
+     font-size: 45px;
+ }
+ 
+ .name {
+     display: flex;
+     justify-content: space-between;
+     font-size: large;
+ }
+ 
+ .cl {
+     color: rgb(220, 220, 220);
+ }
+ 
+ button {
+     height: 1.4rem;
+     width: 1.4rem;
+     border-radius: 4px;
+     cursor: pointer;
+     background-color: aliceblue;
+     color: rgb(255, 127, 80);
+ }
+ 
+ button:hover {
+     background-color: rgb(255, 0, 0);
+ }
