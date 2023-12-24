@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc">
+            <form>
+                <div class="name">
+                    <p class="cl">Calculator</p>
+                    <button onclick="closeWindow()">X </button>
+                </div>
+                <div class="display">
+                    <input type="text" id="display">
+                </div>
+                <div>
+                    <input type="button" value="sqrt(" onclick="squareRoot()" class="sym-operator">
+                    <input type="button" value="^" onclick="power()" class="sym-operator">
+                    <input type="button" value="C" onclick="display.value = ''" class="clear-operator">
+                    <input type="button" value="⌫" onclick="backspace()" class="clear-operator">
+                </div>
+                <div>
+                    <input type="button" value="(" onclick="display.value += '('" class="sym-operator">
+                    <input type="button" value=")" onclick="display.value += ')'" class="sym-operator">
+                    <input type="button" value="%" onclick="display.value +='%' " class="sym-operator">
+                    <input type="button" value="/" onclick="display.value +='/' " class="sym-operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value +='7' " class="num-operator">
+                    <input type="button" value="8" onclick="display.value +='8' " class="num-operator">
+                    <input type="button" value="9" onclick="display.value +='9' " class="num-operator">
+                    <input type="button" value="x" onclick="display.value +='*' " class="sym-operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value +='4' " class="num-operator">
+                    <input type="button" value="5" onclick="display.value +='5' " class="num-operator">
+                    <input type="button" value="6" onclick="display.value +='6' " class="num-operator">
+                    <input type="button" value="-" onclick="display.value +='-' " class="sym-operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value +='1' " class="num-operator">
+                    <input type="button" value="2" onclick="display.value +='2' " class="num-operator">
+                    <input type="button" value="3" onclick="display.value +='3' " class="num-operator">
+                    <input type="button" value="+" onclick="display.value +='+' " class="sym-operator">
+                </div>
+                <div>
+                    <input type="button" value="." onclick="display.value +='.' " class="sym-operator">
+                    <input type="button" value="0" onclick="display.value +='0' " class="num-operator">
+                    <input type="button" value="π" onclick="pi()" class="sym-operator">
+                    <input type="button" value="=" onclick="calculate()" class="equal-operator">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
